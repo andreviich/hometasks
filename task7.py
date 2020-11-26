@@ -4,7 +4,6 @@
 st_1 = input('Enter the first string... ')
 st_2 = input('Enter the second string... ')
 
-cases_indexes = []
 for i in range(len(st_1)):
     try:
         if st_2.index(st_1[i]):

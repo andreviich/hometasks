@@ -3,10 +3,15 @@
 
 st_1 = input('Enter the first string... ')
 st_2 = input('Enter the second string... ')
+
+cases_indexes = []
 for i in range(len(st_1)):
     try:
         if st_2.index(st_1[i]):
             pass
     except:
         continue
+    index_of_letter = st_2.rindex(st_1[i])
+    st_2_edited = st_2[:index_of_letter] + st_2[index_of_letter].upper() + st_2[index_of_letter:]
     print(f"{i+1} символ в первой строке встречается во второй строке {st_2}")
+    print(st_2_edited)
